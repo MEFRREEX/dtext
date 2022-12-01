@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=0, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, shrink-to-fit=no"/>
+    <title>Text Tool</title>
+    <link href="style.css" rel="stylesheet" type="text/css">
+    
+    <script src="scripts/jquery.min.js"></script>
+    <script src="scripts/scripts.js"></script>
+</head>
+<body>
+    <input class="input" id="input" placeholder="Введите текст..."> 
+    <br>
+    <button class="button" onclick="process()">Конвертировать</button>
+    <br>
+
+    <br>
+    <div class="result-box" onclick="copyToClipboard('input')">
+        <span class="result" id="result" onclick="copyToClipboard('input')">Тут будет отображатся преобразованный текст.</span>
+    </div>
+    <span class="copied" id="copied"></span> 
+</body>
+</html>
