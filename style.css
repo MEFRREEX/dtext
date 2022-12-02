@@ -22,6 +22,47 @@ body {
     transform: translate(-50%, -50%) 
 }
 
+::selection {
+    background-color: #e9a76e;
+    color: #fff;
+}
+
+A {
+    color: #e1700e; /* Цвет ссылок */
+}
+A:visited {
+    color: #e1700e; /* Цвет посещенных ссылок */
+}
+A:active {
+    color: #e1700e; /* Цвет активных ссылок */
+}
+A:hover {
+    border-radius: 2px;
+    background-color: #ffead7;
+    color: #d2680b; /* Цвет активных ссылок */
+}
+
+.link-block {
+    margin: 0 40px;
+}
+.about {
+    display:inline-block;
+    margin: 0.2px; 
+}
+.about p {
+    display:block;
+    margin: 0 0.2px; 
+}
+.link {
+    display:inline-block;
+    margin: 0.2px;
+} 
+.link a {
+    display:block;
+    margin: 0.2px;
+}
+
+
 .result-box {
     padding: 10px 10px;
     position: center;
@@ -43,12 +84,11 @@ body {
 .copied {
     border-radius: 1em;
     padding: 1em;
-    position: absolute;
+    position: center;
     color: #d26a0f;
     top: 50%;
     left: 50%;
-    margin-right: -50%;
-    transform: translate(-50%, -270%) 
+    margin: 85px;
 }
 
 
