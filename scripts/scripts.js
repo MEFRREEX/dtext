@@ -9,7 +9,7 @@ function process() {
     document.getElementById("result").innerHTML = result;
 }
 function replace(str) {
-    return str
+    return str.toLowerCase()
         .replaceAll("а", "뜀").replaceAll("А", "뜀").replaceAll("б", "뜁").replaceAll("Б", "뜁")
         .replaceAll("в", "뜂").replaceAll("В", "뜂").replaceAll("г", "뜃").replaceAll("Г", "뜃")
         .replaceAll("д", "뜄").replaceAll("Д", "뜄").replaceAll("е", "뜅").replaceAll("Е", "뜅")
