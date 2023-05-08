@@ -1,24 +1,32 @@
 <!DOCTYPE html>
+<html lang="ru">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport"
-          content="width=device-width, user-scalable=0, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, shrink-to-fit=no"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Text Tool</title>
-    <link href="style.css" rel="stylesheet" type="text/css">
-    
-    <script src="scripts/jquery.min.js"></script>
-    <script src="scripts/scripts.js"></script>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <input class="input" id="input" placeholder="Введите текст..."> 
-    <br>
-    <button class="button" onclick="process()">Конвертировать</button>
-    <br>
+    <div class="link-block">
+        <p class="about">Присоединяйтесь к нам в</p>
+        <a class="link" href="https://discord.gg/PHJZYYawVV" target="_blank">дискорде!</a>
+    </div>
 
     <br>
-    <div class="result-box" onclick="copyToClipboard('input')">
-        <span class="result" id="result" onclick="copyToClipboard('input')">Тут будет отображатся преобразованный текст.</span>
+
+    <div class="input-box">
+        <input class="input" id="input" type="text" placeholder="Введите текст...">
+        <br>
+        <button class="button" onclick="process()">Конвертировать</button>
     </div>
-    <span class="copied" id="copied"></span> 
+
+    <br>
+
+    <div class="result-box" onclick="copyToClipboard('input')">
+        <span class="result" id="result">Тут будет отображаться преобразованный текст.</span>
+    </div>
+    <span class="copied" id="copied"></span>
+
+    <script src="scripts/scripts.js"></script>
 </body>
 </html>

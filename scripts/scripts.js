@@ -1,13 +1,14 @@
-
 function process() {
-    var str = String(document.getElementById("input").value);
-    if (str == "") {
-        result = "Заполните поле выше, оно не может быть пустым!";
+    const input = document.getElementById("input").value;
+    let result;
+    if (input === "") {
+      result = "Заполните поле выше, оно не может быть пустым!";
     } else {
-        result = replace(str);
+      result = replace(input);
     }
     document.getElementById("result").innerHTML = result;
 }
+  
 function replace(str) {
     return str.toLowerCase()
         .replaceAll("а", "뜀").replaceAll("б", "뜁")
@@ -28,13 +29,16 @@ function replace(str) {
         .replaceAll("э", "뜚").replaceAll("ю", "뜛")
         .replaceAll("я", "뜜");
 }
+  
 function copyToClipboard(input) {
-    var str = String(document.getElementById(input).value);
-    var result = replace(str);
+    const str = document.getElementById(input).value;
+    const result = replace(str);
+
     if (!navigator.clipboard) {
         fallbackCopyTextToClipboard(result);
         return;
     }
+
     navigator.clipboard.writeText(result).then(function() {
         document.getElementById("copied").innerHTML = "Текст скопирован!";
         function clearAlert() {
@@ -46,3 +50,4 @@ function copyToClipboard(input) {
         console.error('Async: Could not copy text: ', err);
     });
 }
+  
