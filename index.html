@@ -19,16 +19,17 @@
     <div class="input-box">
         <input class="input" id="input" type="text" placeholder="Введите текст...">
         <br>
-        <button class="button" onclick="process()">Конвертировать</button>
+        <button class="button" onclick="processConvert()">Конвертировать</button>
     </div>
 
     <br>
 
-    <div class="result-box" onclick="copyToClipboard('input')">
+    <div class="result-box" onclick="processCopy()">
         <span class="result" id="result">Тут будет отображаться преобразованный текст.</span>
     </div>
     <span class="copied" id="copied"></span>
 
     <script src="scripts/scripts.js"></script>
+    <script src="scripts/utils.js"></script>
 </body>
 </html>
