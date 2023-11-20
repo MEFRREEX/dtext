@@ -42,17 +42,6 @@ A:hover {
     color: #d2680b; /* Цвет активных ссылок */
 }
 
-.link-block {
-    margin: 0 40px;
-}
-.about {
-    display:inline-block;
-    margin: 0.2px; 
-}
-.about p {
-    display:block;
-    margin: 0.2px; 
-}
 .link {
     display:inline-block;
     margin: 0.2px;
@@ -61,7 +50,6 @@ A:hover {
     display:block;
     margin: 0.2px;
 }
-
 
 .result-box {
     padding: 10px 10px;
